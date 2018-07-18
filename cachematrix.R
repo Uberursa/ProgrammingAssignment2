@@ -29,10 +29,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## COWARDS WHO WORSHIP AT THE ALTAR OF C
-## COWER BEFORE MY FUNCTIONAL POWER
-## WHILE YOU WERE WRITING FACTORIES
-## I WAS FLYING SPACESHIPS
+## Checks to see if there is an existing va;ue in the cache
+## If there is not, calulates and places it into the 'object'
+## Shows what is in the cache at the end of the process regardless
 cacheSolve <- function(x, ...) {
   if (!is.null(x$getInverse())) {
     message("retrieving cache")
